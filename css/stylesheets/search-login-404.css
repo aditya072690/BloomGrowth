@@ -1,0 +1,74 @@
+/***
+Login styles - START
+ */
+
+ #nav, #backtoblog, body.login div#login h1{
+    display:none;
+}
+
+#login:before {
+    content: '';
+    background: url('/wp-content/uploads/2020/04/TT_RGB_horizontal.svg') no-repeat center center ;
+    background-size: 100%;
+    width: 300px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    position:relative;
+}
+
+/**
+Login Styles - END
+ */
+
+/**
+Search Styles - START
+ */
+
+.search .pagination .alignleft a,
+.search .pagination .alignright a{
+    background-color: transparent;
+    color: #2F72DE;
+    padding: 0px !important;
+    font-size: 16px;
+    font-family: 'Work Sans',Helvetica,Arial,sans-serif;
+}
+
+.search .pagination .alignleft a:before,
+.search .pagination .alignright a:after{
+    font-family: 'ETmodules' !important;
+    content: '\23';
+    color: #2F72DE;
+    opacity: 1;
+    display: inline-block;
+    position:relative;
+    font-size: 19px;
+    font-weight: 600;
+    bottom: -3px;
+}
+.search .pagination .alignleft a:before{
+    content: '\23';
+
+}
+
+.search .pagination .alignright a:after{
+    content: '\24';
+}
+
+.search .pagination .alignleft a:hover,
+.search .pagination .alignright a:hover{
+    background-color: transparent !important;
+    color: #3F8EFC !important;
+}
+
+.search .pagination .alignleft a:hover:before,
+.search .pagination .alignright a:hover:after{
+    color: #2F72DE !important;
+}
+/* End Simple Button Link */
+/**
+Search Styles - END
+ */

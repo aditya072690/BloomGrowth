@@ -1,0 +1,54 @@
+/* forms flexie */
+
+/*blog page form*/
+
+#ff-a67c24b70f4c3046f77fa4f24e85230a > div > div > label {
+    /* display:none;*/
+     font-size:14px;
+ }
+ 
+ 
+ #ff-a67c24b70f4c3046f77fa4f24e85230a > div > div > input {
+     width: 100%;
+     /*padding-top: 16px;
+     padding-bottom: 16px;*/
+     font-size:14px;
+     
+ }
+ #ff-a67c24b70f4c3046f77fa4f24e85230a .radio span {
+     font-size: 10px;
+     position: relative;
+     top: -5px;
+     line-height: 1.2 !important;
+     width:100%;
+ }
+ 
+ #ff-a67c24b70f4c3046f77fa4f24e85230a .flexie-form-render .radio {
+     line-height:1.2em !important;
+ }
+ 
+ #ff-a67c24b70f4c3046f77fa4f24e85230a .flexieForm-component-button button {
+     border: none;
+     background: #00ccc5;
+     border-radius: 4px;
+     color: #142A3B;
+     /*letter-spacing: .2px;*/
+     padding: 10px 32px;
+     font-weight:600;
+     font-size:16px;
+ }
+ 
+ #ff-a67c24b70f4c3046f77fa4f24e85230a .flexieForm-component-button button:hover {
+     background: #00A39E;
+ }
+ 
+ 
+ #ff-a67c24b70f4c3046f77fa4f24e85230a .radio {
+     margin-top: -5px;
+ }
+ 
+ #ff-a67c24b70f4c3046f77fa4f24e85230a a {
+     color:#2F72DE;
+ }
+ 
+ /*end*/

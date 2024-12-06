@@ -1,0 +1,293 @@
+/* Column and Row Spacing */
+/* The first row of content shouldn't have any top padding */
+.single-post #main-content .et_pb_section .et_pb_module.et_pb_post_content div.et_pb_section:first-of-type div.et_pb_row:first-of-type {
+	padding-top: 0px;
+}
+/* END */
+
+/* Featured Blog Post */
+.featured-blog-post article.et_pb_post_extra.el_dbe_classic {
+	display: flex;
+	flex-direction: column;
+}
+
+.featured-blog-post article .post-media {
+	order: 1;
+}
+
+.featured-blog-post article .entry-title {
+	order: 2;
+}
+
+.featured-blog-post article .post-content {
+	order: 3;
+}
+
+.featured-blog-post article .post-meta {
+	order: 4;
+}
+
+.featured-blog-post article.et_pb_post_extra.el_dbe_classic .post-meta,
+.featured-blog-post article.et_pb_post_extra.el_dbe_classic .post-content {
+	padding-left: 0px;
+}
+
+.featured-blog-post article.et_pb_post_extra.el_dbe_classic .post-content {
+	padding-top: 0px;
+}
+
+.featured-blog-post article.et_pb_post_extra.el_dbe_classic .post-media {
+	margin-top: 0px;
+}
+
+.featured-blog-post article.et_pb_post_extra.el_dbe_classic .entry-title:after {
+	display: none;
+}
+/* END */
+
+/* Category cloud on blog pages */
+body .blog-category-cloud .et_pb_widget.widget_categories,
+body .et_pb_column .et_pb_widget.widget_breadcrumb_navxt{
+	width: 100%;
+	margin: 0px;
+}
+
+.blog-category-cloud .et_pb_widget.widget_categories .widgettitle {
+	display: none;
+}
+
+.blog-category-cloud .et_pb_widget.widget_categories ul {
+	justify-content: center;
+}
+
+.et_pb_widget.widget_categories ul {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.et_pb_widget.widget_categories ul li {
+	padding: 5px 10px;
+	margin-right: 8px;
+	margin-bottom: 8px;
+	font-size: 14px;
+	border-radius:4px;
+	background-color: rgba(85,216,144,0.20);
+	color: #2AB769;
+	font-weight: 600;
+}
+
+.et_pb_widget.widget_categories ul li:hover {
+	background-color: #2AB769;
+	color: #fff;
+}
+
+.et_pb_widget.widget_categories ul li a {
+	color: #2AB769;
+	font-weight: 600;
+}
+
+.et_pb_widget.widget_categories ul li:hover a {
+	color: #fff;
+}
+
+/* END */
+
+/* Tag Cloud */
+.blog-tags {
+	color: #fff;
+}
+
+.blog-tags a {
+	background-color: rgba(255,198,0,0.051);
+    color: #ffc600;
+    border-radius: 4px;
+    padding: 2px 15px 5px 15px;
+    font-weight: 600;
+	font-size: 14px;
+}
+
+.blog-tags a:hover {
+	background-color: #ffc600;
+	color: #ffffff;
+}
+/* END */
+
+/* Category Page */
+div.purple1-opaque-shape-section-blog:before {
+    background-image: url(/wp-content/uploads/2020/04/purple-blob1.svg);
+    background-size: 550px;
+    background-position: top left;
+    left: -350px;
+    top: 320px;
+    transform: rotate(22deg);
+    opacity: .5;
+}
+
+@media (max-width: 980px) {
+	div.purple1-opaque-shape-section-blog:before {
+		display: none;
+	}
+}
+/* END */
+
+/* Tag Page */
+.blog-tag-cloud .et_pb_widget.widget_tag_cloud,
+.et_pb_column .et_pb_widget.widget_breadcrumb_navxt{
+	width: 100%;
+	margin: 0px;
+}
+
+.blog-tag-cloud .et_pb_widget.widget_tag_cloud .widgettitle {
+	display: none;
+}
+
+.blog-tag-cloud .et_pb_widget.widget_tag_cloud .tagcloud {
+	justify-content: center;
+}
+
+.et_pb_widget.widget_tag_cloud .tagcloud {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/*.et_pb_widget.widget_tag_cloud .tagcloud a {
+	padding: 5px 10px;
+	background-color: transparent;
+	border: 2px solid #D80D68;
+	margin-right: 8px;
+	margin-bottom: 8px;
+	font-size: 14px;
+}*/
+
+.et_pb_widget.widget_tag_cloud .tagcloud a {
+	padding: 5px 10px;
+	margin-right: 8px;
+	margin-bottom: 8px;
+	font-size: 14px !important;
+	border-radius:4px;
+	background-color: rgba(37,214,166,0.2);
+	color: #142A3B;
+	font-weight: 600;
+}
+
+.et_pb_widget.widget_tag_cloud .tagcloud a:hover {
+	background-color: #25D6A6;
+}
+
+div.green1-opaque-shape-section-blog:before {
+    background-image: url(/wp-content/uploads/2020/04/teal-blob1.svg);
+    background-size: 550px;
+    background-position: top left;
+    left: -350px;
+    top: 320px;
+    transform: rotate(22deg);
+}
+
+@media (max-width: 980px) {
+	div.green1-opaque-shape-section-blog:before {
+		display: none;
+	}
+}
+/* END */
+
+/* Individual Blog Post */
+.single-post .et_pb_title_container .entry-title {
+	padding-top: 20px;
+}
+/* END */
+
+.et_pb_post_extra.el_dbe_block_extended .post-meta.post-meta-custom {
+    position: relative;
+    border-top: 0px solid #fff;
+    padding: 0px;
+}
+
+.et_pb_post_extra.el_dbe_block_extended.image-top .post-categories.post-categories-custom {
+    position: relative;
+    padding-top: 0px;
+}
+
+.et_pb_post_extra.el_dbe_block_extended .post-categories.post-categories-custom a {
+    color: #2F72DE;
+    border: 0px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0;
+    line-height: 18px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+.el-dbe-blog-extra.block_extended article.et_pb_post_extra.el_dbe_block_extended .post-content {
+	padding-bottom: 0px;
+}
+
+.et_pb_post_extra.el_dbe_block_extended a.more-link {
+	color: #2F72DE;
+    font-size: 16px;
+    font-family: 'Work Sans',Helvetica,Arial,sans-serif;
+    font-weight: 600;
+}
+
+.et_pb_post_extra.el_dbe_block_extended a.more-link:after {
+	content: '\24';
+    color: #2F72DE;
+    opacity: 1;
+    display: inline-block;
+    right: -24px;
+    bottom: 0px;
+    font-size: 19px;
+    font-weight: 600;
+	font-family: 'ETmodules' !important;
+	position: absolute;
+}
+
+.widget_breadcrumb_navxt .breadcrumbs {
+	color: #D3D4D4;
+	font-size: 16px;
+    font-family: 'Work Sans',Helvetica,Arial,sans-serif;
+    font-weight: 600;
+	padding-bottom: 20px;
+}
+
+.widget_breadcrumb_navxt .breadcrumbs span[typeof="ListItem"]:after {
+    content: "\35";
+    font-family: 'ETmodules';
+    vertical-align: text-bottom;
+}
+
+.blog-category-blurb .et_pb_blurb_content {
+	margin: 0px;
+}
+
+.blog-category-blurb .et_pb_module_header a {
+	color: #2F72DE;
+    padding-right: 10px;
+	padding-bottom: 10px;
+	font-size: 14px;
+}
+
+/* Email List Subscription */
+.emaillist input[type=text],
+.emaillist input[type=email] {
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+	border-color: #ddd;
+}
+
+.emaillist input[type=submit] {
+	background-color: #00ccc5;
+    border: 0px solid;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-weight: 600;
+    color: #142A3B;
+	margin-top: 15px;
+}
+/* END */

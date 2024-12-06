@@ -1,0 +1,19 @@
+/* @import '/Users/adityachauhan/Desktop/AdityaChauhan/BraveBrowser/Website/css/stylesheets/atomic.css';
+
+@import '/Users/adityachauhan/Desktop/AdityaChauhan/BraveBrowser/Website/css/stylesheets/header.css';
+@import '/Users/adityachauhan/Desktop/AdityaChauhan/BraveBrowser/Website/css/stylesheets/homepage.css';
+@import '/Users/adityachauhan/Desktop/AdityaChauhan/BraveBrowser/Website/css/stylesheets/blobs.css';
+@import '/Users/adityachauhan/Desktop/AdityaChauhan/BraveBrowser/Website/css/stylesheets/blog.css';
+@import '/Users/adityachauhan/Desktop/AdityaChauhan/BraveBrowser/Website/css/stylesheets/events.css';
+@import '/Users/adityachauhan/Desktop/AdityaChauhan/BraveBrowser/Website/css/stylesheets/footer.css';
+@import '/Users/adityachauhan/Desktop/AdityaChauhan/BraveBrowser/Website/css/stylesheets/search-login-404.css'; */
+
+
+@import './stylesheets/atomic.css';
+@import './stylesheets/header.css';
+@import './stylesheets/homepage.css';
+@import './stylesheets/blobs.css';
+@import './stylesheets/blog.css';
+@import './stylesheets/events.css';
+@import './stylesheets/footer.css';
+@import './stylesheets/search-login-404.css';

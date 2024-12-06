@@ -1,0 +1,180 @@
+.single-ajde_events #main-content .container {
+	width: 87%;
+}
+
+.single-ajde_events #main-content .container .evo_sin_event_list .event_description .evcal_evdata_row {
+	padding: 0px;
+}
+
+.eventon_single_event .calendar_header,
+.eventon_single_event .eventon_full_description h3.padb5.evo_h3,
+.eventon_single_event #evcal_list .eventon_list_event .desc_trig_outter{
+    display: none;
+}
+
+.eventon_single_event .eventon_events_list .eventon_list_event .desc_trig_outter a {
+	border: 0px solid;
+}
+
+.eventon_single_event #evcal_list.eventon_events_list .eventon_list_event .desc_trig_outter a:hover,
+.eventon_single_event #evcal_list.eventon_events_list .eventon_list_event .desc_trig_outter a:hover * {
+	pointer-events: none;
+	border-left: 0px solid;
+	cursor: pointer;
+	background-color: #fff;
+}
+
+.eventon_single_event #evcal_list.eventon_events_list .eventon_list_event {
+	border: 0px solid;	
+}
+
+.et-db #et-boc .eventon_single_event .et-l .et_pb_section .et_pb_row {
+	width: 100%;
+	padding: 0px;
+}
+
+.eventon_single_event #evcal_list .evcal_eventcard .evcal_event_details {
+	background-color: #fff;	
+	border-bottom: 0px;
+}
+
+.eventon_single_event .evcal_eventcard .evcal_event_details .evcal_evdata_cell  {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.eventon_single_event .evcal_evdata_row.evo_metarow_ICS .evcal_evdata_cell {
+	padding-left: 0px;
+}
+
+.eventon_single_event .evcal_eventcard .evcal_evdata_row {
+	background-color: #fff;
+}
+
+.eventon_single_event .evcal_evdata_row.evcal_event_details .evcal_evdata_cell p {
+	font-size: 16px
+}
+
+.evo_sin_event_list .evo_metarow_ICS .evcal_evdata_cell p a {
+	color: #2F72DE;
+	text-transform: none;
+    font-size: 14px;
+    font-family: 'Work Sans',Helvetica,Arial,sans-serif;
+	position: relative;
+	padding-right: 40px;
+}
+
+.evo_sin_event_list .evo_metarow_ICS .evcal_evdata_cell p a:after {
+    content: '\24';
+    font-family: 'ETmodules' !important;
+	position: absolute;
+    color: #3F8EFC;
+    opacity: 1;
+    display: inline-block;
+    bottom: -1px;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.ajde_evcal_calendar .et_pb_text_inner {
+    color: #666;
+}
+
+.et_pb_section .ajde_evcal_calendar.boxy.boxstyle1 #evcal_list .eventon_list_event .evcal_desc span.evcal_event_title,
+.et_pb_section .ajde_evcal_calendar.boxy.boxstyle1 #evcal_list .eventon_list_event .evcal_desc span.evcal_event_subtitle {
+	overflow: visible;
+    white-space: normal;
+    text-overflow: unset;
+}
+
+.et_pb_section .ajde_evcal_calendar.boxy.boxstyle1 #evcal_list .eventon_list_event .desc_trig.sin_val .evcal_desc {
+	padding-left: 65px;
+}
+
+.et_pb_section .ajde_evcal_calendar.boxy.boxstyle1 #evcal_list .eventon_list_event .evcal_desc span.evcal_event_title, 
+.et_pb_section .evo_lightboxes .evo_pop_body .evcal_desc span.evcal_desc2
+{
+	text-transform: none;
+}
+
+.et_pb_section .evcal_cblock .evo_start em.month {
+	color: #142A3B;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.et_pb_section .evcal_cblock .evo_start em.date,
+.et_pb_section .ajde_evcal_calendar.boxy.boxstyle1 #evcal_list .evcal_cblock .evo_end {
+	color: #E00031;	
+	font-size: 38px;
+}
+
+.et_pb_section .evcal_cblock .evo_end:before {
+	width: 7px;
+	color: #E00031;
+}
+
+.et_pb_section .eventon_events_list .eventon_list_event .mul_val .evcal_desc, 
+.et_pb_section .evo_pop_body .mul_val .evcal_desc {
+	padding-left: 116px;
+}
+
+.et_pb_section .ajde_evcal_calendar.boxy.boxstyle1 #evcal_list .eventon_list_event .desc_trig {
+	border: 0px solid;
+	background-color: #fafafa;
+}
+
+.et_pb_section .ajde_evcal_calendar.boxy.boxstyle1 #evcal_list .evcal_cblock .evo_end {
+	font-size: 38px;
+	margin-top: 0px;
+}
+
+/* blob */
+
+.single-ajde_events #main-content {
+	overflow: hidden;
+}
+
+/*.eventon_single_event #evcal_list.eventon_events_list .eventon_list_event {
+	z-index: 1;
+}*/
+/*
+.eventon_single_event .evo_sin_event_list:after {
+	content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+	background-image: url(/wp-content/uploads/2020/04/orange-blob2.svg);
+    background-size: 550px;
+    background-position: center right;
+    right: -40%;
+    top: 10%;
+}
+
+@media  (max-width: 700px) {
+	.eventon_single_event .evo_sin_event_list:after {
+		background-size: 300px;
+		right: -200px;
+	}	
+}
+*/
+/* end */
+
+@media (max-width: 900px) {
+	.eventon_main_section {
+		padding: 0px;
+	}
+	
+	.eventon_single_event .evcal_eventcard .evcal_event_details .evcal_evdata_cell  {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+
+/* typography in events text */
+
+.ajde_evcal_calendar .eventon_events_list p {
+	font-family: 'work sans' !important;
+}

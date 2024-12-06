@@ -1,0 +1,634 @@
+/*
+ * CSS for section background shapes
+ * */
+
+/***
+ *  START - Blob shapes 
+ ***/
+ .et_pb_section.blue-blob,
+ .et_pb_section.dark-yellow-blob {
+     position: relative;
+ }
+ 
+ .et_pb_section.blue-blob:after {
+     content: '';
+     background-image: url(/wp-content/uploads/2020/04/blue-blob.png);
+     background-repeat: no-repeat;
+     position: absolute;
+     top: 0;
+     right: 0;
+     height: 100%;
+     width: 100%;
+     background-position: top right;
+     background-size: contain;
+     max-height: 1500px;
+ }
+ 
+ .et_pb_section.dark-yellow-blob:before {
+     content: '';
+     background-image: url(/wp-content/uploads/2020/04/wave_yellow@2x.png);
+     background-repeat: no-repeat;
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     background-position: center left;
+     background-size: auto 300px;
+ }
+ 
+ @media (max-width: 700px) {
+     .et_pb_section.dark-yellow-blob:before {
+         background-image: none;
+     }
+ }
+ 
+ @media  (max-width: 980px) {
+     .et_pb_section.blue-blob:after {
+         max-height: 900px;
+     }
+ }
+ /***
+  *  END - Blob shapes 
+  ***/
+ 
+ /***
+  *  START - Section shapes 
+  ***/
+ div[class*=-shape-section] {
+     overflow: hidden;
+ }
+ 
+ div[class*=-shape-section]:last-of-type {
+     overflow: hidden;
+ }
+ 
+ /*div[class*=-shape-section]:before,
+ div[class*=-shape-section]:after{
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-size: auto;
+     display: block;
+ }*/
+ 
+ div.blue-shape-section:before {
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-size: auto;
+     background-image: url(/wp-content/uploads/2020/04/blue-section-dots.png);
+     top: 20px;
+     right: 84%;
+     background-position: top right;
+ }
+ 
+ div.blue-shape-section:after {
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-size: auto;
+     background-image: url(/wp-content/uploads/2020/04/blue-section-shape.png);
+     bottom: -7px;
+     right: -1px;
+     background-position: bottom right;
+ }
+ 
+ div.pink-shape-section:before {
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-size: auto;
+     background-image: url(/wp-content/uploads/2020/04/pink-section-dots.png);
+     top: 20px;
+     left: 85%;
+     background-position: top left;
+ }
+ 
+ div.pink-shape-section:after {
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-size: auto;
+     background-image: url(/wp-content/uploads/2020/04/pink-section-shape.png);
+     top: 0px;
+     background-position: center left;
+ }
+ 
+ div.green-shape-section:before {
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-size: auto;
+     background-image: url(/wp-content/uploads/2020/04/green-section-dots.png);
+     top: 80px;
+     right: 90%;
+     background-position: top right;
+ }
+ 
+ div.green-shape-section:after {
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-size: auto;
+     background-image: url(/wp-content/uploads/2020/04/green-section-shape.png);
+     bottom: -8px;
+     right: -1px;
+     background-position: bottom right;
+ }
+ 
+ div.green1-opaque-shape-section:before {
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-image: url(/wp-content/uploads/2020/04/teal-blob1.svg);
+     background-size: 750px;
+     background-position: top left;
+     left: -350px;
+ }
+ 
+ /* Solutions */
+ div.green1-opaque-shape-section2:after {
+     content: '';
+     position: absolute;
+     background-repeat: no-repeat;
+     background-image: url(/wp-content/uploads/2020/04/teal-blob1.svg);
+     background-size: 650px;
+     background-position: top right;
+     transform: rotate(-131deg);
+     left: 79%;
+     top: 24%;
+     height: 700px;
+     width: 700px;
+ }
+ 
+ div.green2-opaque-shape-section:after {
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-image: url(/wp-content/uploads/2020/04/teal-blob2.svg);
+     background-size: 500px;
+     background-position: top right;
+     right: -200px;
+     top: -50px;
+ }
+ 
+ /* not assigned yet */
+ div.green3-opaque-shape-section:before {
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-image: url(/wp-content/uploads/2020/04/teal-blob3.svg);
+     background-size: 500px;
+     background-position: bottom left;
+     left: -150px;
+     bottom: 0px;
+ }
+ 
+ div.yellow-shape-section:before {
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-size: auto;
+     background-image: url(/wp-content/uploads/2020/04/yellow-section-dots.png);
+     bottom: 40px;
+     left: 90%;
+     background-position: bottom left;
+ }
+ 
+ div.yellow-shape-section:after {
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-size: auto;
+     background-image: url(/wp-content/uploads/2020/04/yellow-section-shape.png);
+     top: 0px;
+     left: -1px;
+     background-position: top left;
+ }
+ 
+ /* not assigned yet */
+ div.yellow1-opaque-shape-section:before {
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-image: url(/wp-content/uploads/2020/04/yellow-blob1.svg);
+     background-size: 500px;
+     background-position: top right;
+     right: -210px;
+ }
+ 
+ div.yellow2-opaque-shape-section:after {
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-image: url(/wp-content/uploads/2020/04/yellow-blob2.svg);
+     background-size: 500px;
+     background-position: top left;
+     left: -200px;
+     top: -40px;
+ }
+ 
+ /* Solutions */
+ div.yellow2-opaque-shape-section2:after {
+     content: '';
+     position: absolute;
+     background-repeat: no-repeat;
+     background-image: url(/wp-content/uploads/2020/04/yellow-blob2.svg);
+     background-size: 500px;
+     background-position: top right;
+     left: 80%;
+     top: 10%;
+     height: 500px;
+     width: 500px;
+ }
+ 
+ div.yellow3-opaque-shape-section:before {
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-image: url(/wp-content/uploads/2020/04/yellow-blob3.svg);
+     background-size: 500px;
+     background-position: bottom left;
+     left: -200px;
+     bottom: 0px;
+ }
+ 
+ /* not assigned yet */
+ div.orange1-opaque-shape-section:before {
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-image: url(/wp-content/uploads/2020/04/orange-blob1.svg);
+     background-size: 650px;
+     background-position: bottom left;
+     left: -300px;
+     bottom: 0;
+ }
+ 
+ div.orange2-opaque-shape-section:after {
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-image: url(/wp-content/uploads/2020/04/orange-blob2.svg);
+     background-size: 750px;
+     background-position: bottom right;
+     right: -200px;
+     bottom: 0;
+ }
+ 
+ /* not assigned yet */
+ div.orange3-opaque-shape-section:after {
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-image: url(/wp-content/uploads/2020/04/orange-blob3.svg);
+     background-size: 750px;
+     background-position: top right;
+     right: -400px;
+     top: 0;
+ }
+ 
+ div.dkblue1-opaque-shape-section:before {
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-image: url(/wp-content/uploads/2020/04/dark-blue-blob1.svg);
+     background-size: 750px;
+     background-position: top left;
+     left: -350px;
+ }
+ 
+ /* not assigned yet */
+ div.dkblue2-opaque-shape-section:after {
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-image: url(/wp-content/uploads/2020/04/dark-blue-blob2.svg);
+     background-size: 500px;
+     background-position: top right;
+     right: -200px;
+     top: -50px;
+ }
+ 
+ div.dkblue3-opaque-shape-section:before {
+         content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-image: url(/wp-content/uploads/2020/04/dark-blue-blob3.svg);
+     background-size: 500px;
+     background-position: center left;
+     left: -150px;
+     bottom: 0px;
+ }
+ 
+ /* not assigned yet */
+ div.blue1-opaque-shape-section:before {
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-image: url(/wp-content/uploads/2020/04/light-blue-blob1.svg);
+     background-size: 650px;
+     background-position: top left;
+     left: -300px;
+ }
+ 
+ div.blue2-opaque-shape-section:after {
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-image: url(/wp-content/uploads/2020/04/light-blue-blob2.svg);
+     background-size: 750px;
+     background-position: bottom right;
+     right: -200px;
+     bottom: 0;
+ }
+ 
+ /* not assigned yet */
+ div.blue3-opaque-shape-section:after {
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-image: url(/wp-content/uploads/2020/04/light-blue-blob3.svg);
+     background-size: 750px;
+     background-position: top right;
+     right: -400px;
+     top: 0;
+ }
+ 
+ div.pink1-opaque-shape-section:before {
+     content: '';
+     position: absolute;
+     background-repeat: no-repeat;
+     background-image: url(/wp-content/uploads/2020/04/pink-blob1.svg);
+     background-size: 500px;
+     background-position: top left;
+     right: 80%;
+     transform: rotate(-105deg);
+     top: 6%;
+     height: 500px;
+     width: 500px;
+ }
+ 
+ /* not assigned yet */
+ div.pink2-opaque-shape-section:after {
+     content: '';
+     position: absolute;
+     background-repeat: no-repeat;
+     height: 100%;
+     width: 100%;
+     background-image: url(/wp-content/uploads/2020/04/pink-blob2.svg);
+     background-size: 500px;
+     background-position: top right;
+     right: -200px;
+     top: -50px;
+ }
+ 
+ /* not assigned yet */
+ div.pink3-opaque-shape-section:before {
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-image: url(/wp-content/uploads/2020/04/pink-blob3.svg);
+     background-size: 500px;
+     background-position: bottom left;
+     left: -150px;
+     bottom: 0px;
+ }
+ 
+ div.purple1-opaque-shape-section:before {
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-image: url(/wp-content/uploads/2020/04/purple-blob1.svg);
+     background-size: 650px;
+     background-position: top left;
+     left: -350px;
+ }
+ 
+ div.purple2-opaque-shape-section:after {
+     content: '';
+     position: absolute;
+     background-repeat: no-repeat;
+     background-image: url(/wp-content/uploads/2020/04/purple-blob2.svg);
+     background-size: 650px;
+     background-position: top left;
+     right: 74%;
+     top: -3%;
+     transform: rotate(99deg);
+     height: 700px;
+     width: 700px;
+ }
+ 
+ div.purple3-opaque-shape-section:after {
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-image: url(/wp-content/uploads/2020/04/purple-blob3.svg);
+     background-size: 750px;
+     background-position: bottom right;
+     right: -400px;
+     bottom: 100px;
+ }
+ 
+ @media  (max-width: 700px) {
+     div[class*=-shape-section]:before,
+     div[class*=-shape-section]:after {
+         background-size: 300px;
+     }
+     
+     div.blue-shape-section:before,
+     div.green-shape-section:before {
+         top: 10px;
+         left: -73px;
+         background-position: top left;
+         height: 60px;
+         background-size: initial;
+     }
+     
+     div.blue-shape-section:after,
+     div.green-shape-section:after {
+         top: auto;
+         right: -30px;
+         bottom: -8px;
+         background-position: bottom right;
+         background-size: contain;
+         height: 120px;
+     }
+     
+     div.pink-shape-section:after {
+         top: auto;
+         left: 0px;
+         bottom: 0px;
+         background-position: bottom left;
+         transform: rotate(-90deg);
+         height: 120px;
+         width: 120px;
+         background-size: initial;
+     }
+     
+     div.pink-shape-section:before,
+     div.yellow-shape-section:before {
+         top: 10px;
+         right: -77px;
+         bottom: unset;
+         left: unset;
+         background-position: top right;
+         height: 60px;
+         background-size: initial;
+     }
+     
+     div.yellow-shape-section:after {
+         top: auto;
+         left: -30px;
+         bottom: 0;
+         background-position: bottom left;
+         background-size: contain;
+         transform: scaleY(-1);
+         height: 90px;
+     }
+     
+     div.green2-opaque-shape-section:after,
+     div.pink2-opaque-shape-section:after,
+     div.dkblue2-opaque-shape-section:after {
+         top: 0px;
+     }
+     
+     div.orange1-opaque-shape-section:before,
+     div.blue1-opaque-shape-section:before,
+     div.purple1-opaque-shape-section:before,
+     div.green1-opaque-shape-section:before,
+     div.dkblue1-opaque-shape-section:before,
+     div.pink1-opaque-shape-section:before{
+         left: -200px;
+     }
+     
+     div.orange3-opaque-shape-section:after,
+     div.blue3-opaque-shape-section:before,
+     div.purple3-opaque-shape-section:before,
+     div.blue3-opaque-shape-section:after,
+     div.purple3-opaque-shape-section:after{
+         right: -200px;
+     }
+     
+     div.green1-opaque-shape-section2:after {
+         left: 88%;
+         top: 16%;	
+     }
+     
+     div.yellow2-opaque-shape-section2:after {
+         left: 41%;
+         top: 4%;
+     }
+     
+     div.purple2-opaque-shape-section:after {
+         right: 80%;
+     }
+ }
+ 
+ @media (max-width: 500px) {
+     div.yellow2-opaque-shape-section2:after {
+         left: 21%;
+     }
+ }
+ /***
+  *  END - Section shapes 
+  ***/
+ 
+ /***
+  *  START - Row shapes 
+  ***/
+ /*div[class*=-row-dots] .et_pb_column:before,
+ div[class*=-row-dots] .et_pb_column:after{
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-size: auto;
+ }*/
+ 
+ div.blue-row-dots .et_pb_column:before {
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;	
+     background-image: url(/wp-content/uploads/2020/04/blue-dots.png);
+     opacity: .5;
+     background-position: top left;
+     top: -14px;
+     left: -50px;
+     background-size: auto;
+ }
+ 
+ div.green-row-dots .et_pb_column:after {
+     content: '';
+     position: absolute;
+     height: 50px;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-image: url(/wp-content/uploads/2020/04/green-dots.png);
+     opacity: 1;
+     background-position: bottom right;
+     bottom: -48px;
+     right: -56px;
+     background-size: contain;
+ }
+ /***
+  *  END - Row shapes 
+  ***/
