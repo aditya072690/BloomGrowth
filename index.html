@@ -623,6 +623,7 @@
     <link rel='stylesheet' id='DiviMegaPro-main-css' href='css/main.css' type='text/css' media='all' />
     <link rel='stylesheet' id='DiviMegaPro-main-media-query-css' href='css/main-media-query.css' type='text/css' media='all' />
     <link rel='stylesheet' id='DiviMegaPro-tippy-animations-css' href='css/animations.css' type='text/css' media='all' />
+    <link href="https://unpkg.com/tippy.js@6/dist/tippy.css" rel="stylesheet">
     <script>
     var divimegapro_singleton = [];
     divimegapro_singleton['header'] = false;
@@ -737,43 +738,7 @@
     </script>
 
     <style type="text/css"></style>
-    <div class="et-l et-l--post">
-        <div class="et_builder_inner_content et_pb_gutters3">
-            <div class="divimegapro-wrapper">
-                <div id="divimegapro-container-4917" class="divimegapro-container" data-animation="shift-away" data-bgcolor="" data-fontcolor="" data-placement="bottom" data-margintopbottom="" data-megaprowidth="100" data-megaprowidthcustom="" data-megaprofixedheight="" data-triggertype="hover" data-exittype="hover" data-exitdelay="" data-enable_arrow="0" data-arrowfeature_type="sharp" data-dmp_cssposition="absolute" data-dmp_enablecenterhorizontal="" style="display:none">
-                    <div id="divimegapro-4917" class="divimegapro divimegapro-flexheight">
-                        <div class="divimegapro-pre-body">
-                            <div class="divimegapro-body">
-                                <div class="et_pb_section et_pb_section_2 et_pb_with_background et_section_regular">
 
-                                    <div class="et_pb_row et_pb_row_3">
-                                        <div class="et_pb_column et_pb_column_4_4 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough et-last-child">
-
-                                            <div class="et_pb_with_border et_pb_module et_pb_text et_pb_text_40  et_pb_text_align_left et_pb_bg_layout_light">
-
-                                                <div class="et_pb_text_inner">
-                                                    <div class="et_pb_section et_pb_section_4 et_pb_with_background et_section_regular">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="divimegapro-close-container">
-                            <button type="button" class="divimegapro-close divimegapro-customclose-btn-4917" data-dmpid="4917" title="Close dialog" aria-disabled="true">
-                                <span class="">&times;</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
     <div id="page-container">
         <div id="et-boc" class="et-boc">
 
@@ -916,7 +881,7 @@
                                                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30175">
                                                             <a href="blog.html">Blog</a>
                                                         </li>
-                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30172">
+                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38369">
                                                             <a href="index.html">Press and Events</a>
                                                         </li>
                                                     </ul>
@@ -2189,6 +2154,49 @@
 
     });
     </script> -->
+
+    <script>
+               document.addEventListener("DOMContentLoaded", function () {
+            const menuItems = document.querySelectorAll('.menu-item-has-children > a');
+
+            menuItems.forEach((item) => {
+                item.addEventListener('click', function (e) {
+                    e.preventDefault();  // Prevent the default anchor behavior
+
+                    const parentLi = item.parentElement;  // Get the parent <li> of the clicked link
+                    const submenu = parentLi.querySelector('.sub-menu');  // Find the submenu
+
+                    // Toggle the submenu and the arrow
+                    if (parentLi.classList.contains('open')) {
+                        // Close the submenu
+                        parentLi.classList.remove('open');
+                        submenu.style.display = 'none';
+                        submenu.style.opacity = 0;
+                        submenu.style.transform = 'translateY(10px)';
+                    } else {
+                        // Close all other submenus and reset arrows
+                        document.querySelectorAll('.menu-item-has-children').forEach((item) => {
+                            item.classList.remove('open');
+                            const sub = item.querySelector('.sub-menu');
+                            if (sub) {
+                                sub.style.display = 'none';
+                                sub.style.opacity = 0;
+                                sub.style.transform = 'translateY(10px)';
+                            }
+                        });
+
+                        // Open the clicked submenu
+                        parentLi.classList.add('open');
+                        submenu.style.display = 'block';
+                        submenu.style.opacity = 1;
+                        submenu.style.transform = 'translateY(0)';
+                    }
+                });
+            });
+        });
+
+        </script>
+        
     <script>
         jQuery(document).ready(function ($) {
     // Add class and ARIA attributes for accessibility
@@ -2279,6 +2287,12 @@
         });
     });
 });
+
+    $('.menu-item-has-children > a').on('click', function (e) {
+        e.preventDefault(); // Prevent navigation
+        $(this).siblings('.sub-menu').slideToggle(); // Toggle visibility
+    });
+
 
     </script>
 
