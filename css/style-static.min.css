@@ -7895,8 +7895,8 @@ body.safari .section_has_divider, body.uiwebview .section_has_divider {
 @font-face {
     font-family: ETmodules;
     font-display: block;
-    src: url(Fonts/modules/modules.eot);
-    src: url(Fonts/modules/modules.eot?#iefix) format("embedded-opentype"), url(Fonts/modules/modules.ttf) format("truetype"), url(Fonts/modules/modules.woff) format("woff");
+    src: url(../Fonts/modules/modules.eot);
+    src: url(../Fonts/modules/modules.eot?#iefix) format("embedded-opentype"), url(../Fonts/modules/modules.ttf) format("truetype"), url(../Fonts/modules/modules.woff) format("woff");
     font-weight: 400;
     font-style:normal
 }
@@ -7906,8 +7906,8 @@ body.safari .section_has_divider, body.uiwebview .section_has_divider {
     font-style: normal;
     font-weight: 400;
     font-display: block;
-    src: url(Fonts/fa-regular-400.eot);
-    src: url(Fonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(Fonts/fa-regular-400.woff2) format("woff2"), url(Fonts/fa-regular-400.woff) format("woff"), url(Fonts/fa-regular-400.ttf) format("truetype")
+    src: url(../Fonts/fa-regular-400.eot);
+    src: url(../Fonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(../Fonts/fa-regular-400.woff2) format("woff2"), url(../Fonts/fa-regular-400.woff) format("woff"), url(../Fonts/fa-regular-400.ttf) format("truetype")
 }
 
 @font-face {
@@ -7915,8 +7915,8 @@ body.safari .section_has_divider, body.uiwebview .section_has_divider {
     font-style: normal;
     font-weight: 900;
     font-display: block;
-    src: url(Fonts/fa-solid-900.eot);
-    src: url(Fonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(Fonts/fa-solid-900.woff2) format("woff2"), url(Fonts/fa-solid-900.woff) format("woff"), url(Fonts/fa-solid-900.ttf) format("truetype")
+    src: url(../Fonts/fa-solid-900.eot);
+    src: url(../Fonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(../Fonts/fa-solid-900.woff2) format("woff2"), url(../Fonts/fa-solid-900.woff) format("woff"), url(../Fonts/fa-solid-900.ttf) format("truetype")
 }
 
 @font-face {
@@ -7924,8 +7924,8 @@ body.safari .section_has_divider, body.uiwebview .section_has_divider {
     font-style: normal;
     font-weight: 400;
     font-display: block;
-    src: url(Fonts/fa-brands-400.eot);
-    src: url(Fonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(Fonts/fa-brands-400.woff2) format("woff2"), url(Fonts/fa-brands-400.woff) format("woff"), url(Fonts/fa-brands-400.ttf) format("truetype")
+    src: url(../Fonts/fa-brands-400.eot);
+    src: url(../Fonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(../Fonts/fa-brands-400.woff2) format("woff2"), url(../Fonts/fa-brands-400.woff) format("woff"), url(../Fonts/fa-brands-400.ttf) format("truetype")
 }
 
 .et_pb_button[data-icon]:not([data-icon=""]):after {
